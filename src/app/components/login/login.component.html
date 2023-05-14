@@ -1,5 +1,25 @@
-<mat-card>
+<!-- <mat-card>
     <mat-card-content>
         <mat-slide-toggle>Toggle me!</mat-slide-toggle>
     </mat-card-content>
-  </mat-card>
+  </mat-card> -->
+
+  <div class="login-component">
+    <form class="login-form" [formGroup]="loginForm">
+
+        <mat-form-field class="input-login">
+            <mat-label>Usuário:</mat-label>
+            <input matInput placeholder="Usuario" type="text" formControlName="user" (keyup)="validaForm(loginForm)">
+          </mat-form-field>
+
+        <mat-form-field class="input-login">  
+          <mat-label>Senha:</mat-label>
+          <input matInput label="senha" type="password" formControlName="senha" (keyup)="validaForm(loginForm)">
+        </mat-form-field>
+
+        <button class="submit-button" mat-fab extended color="warn" (click)="submitLogin(loginForm)" routerLink="/listagem" [disabled]="!validaFormFlag" >
+            <mat-icon>send</mat-icon>
+            Entrar
+        </button>
+    </form>
+  </div>
