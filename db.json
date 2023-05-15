@@ -1,0 +1,36 @@
+{
+  "inspection": [
+      {
+          "id": 1,
+          "companyId": "1",
+          "brokerCode": "123555",
+          "productCode": "585888",
+          "productName": "computer",
+          "InspectionNumber": 1,
+          "reports": [
+              {
+                  "id": 1,
+                  "status": 0,
+                  "observation": "new"
+              }
+          ]
+      },
+      {
+        "id": 2,
+        "companyId": "2",
+        "brokerCode": "4333456",
+        "productCode": "3445666",
+        "productName": "notebook",
+        "InspectionNumber": 2,
+        "reports": [
+            {
+                "id": 2,
+                "status": 1,
+                "observation": "Used"
+            }
+        ]
+    }
+    
+    ]
+  
+}
