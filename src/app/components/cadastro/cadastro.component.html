@@ -1,1 +1,90 @@
-<p>cadastro works!</p>
+<button class="listagem-button" mat-fab extended color="green" routerLink="/listagem">
+    <mat-icon>reply</mat-icon>
+    LIstagem
+</button>
+<mat-card class="cadastro-component">
+
+    <mat-card-actions> 
+
+
+        <form class="example-form" [formGroup]="produto">
+            <div class="header">
+                <mat-card-title>Cadastro:</mat-card-title>
+                <mat-card-subtitle>Adicione um novo produto:</mat-card-subtitle>
+            </div>
+            <table class="example-full-width" cellspacing="0">
+                <tr>
+                    <td><mat-form-field class="input-cadastro">
+                            <mat-label>Id:</mat-label>
+                            <input matInput type="number" formControlName="id" (keyup)="validaForm(produto)">
+                        </mat-form-field></td>
+                    <td><mat-form-field class="input-cadastro">
+                            <mat-label>Company Id:</mat-label>
+                            <input matInput type="text" formControlName="companyId" (keyup)="validaForm(produto)">
+                        </mat-form-field></td>
+                    <td><mat-form-field class="input-cadastro">
+                        <mat-label>broker Code:</mat-label>
+                        <input matInput type="text" formControlName="brokerCode" (keyup)="validaForm(produto)">
+                    </mat-form-field></td>
+                </tr>
+                <tr>
+                    <td><mat-form-field class="input-cadastro">
+                        <mat-label>Product Code:</mat-label>
+                        <input matInput type="text" formControlName="productCode" (keyup)="validaForm(produto)">
+                    </mat-form-field></td>
+                    <td><mat-form-field class="input-cadastro">
+                            <mat-label>Product Name:</mat-label>
+                            <input matInput type="text" formControlName="productName" (keyup)="validaForm(produto)">
+                        </mat-form-field></td>
+                    <td><mat-form-field class="input-cadastro">
+                        <mat-label>Inspection Number:</mat-label>
+                        <input matInput type="text" formControlName="InspectionNumber" (keyup)="validaForm(produto)">
+                    </mat-form-field></td>
+                </tr>
+  
+            </table>
+            <p>
+            <mat-form-field class="input-cadastro-report">
+                <mat-label>Report Id:</mat-label>
+                <input matInput type="number" formControlName="reportsid" (keyup)="validaForm(produto)">
+            </mat-form-field>
+            <mat-form-field class="input-cadastro-report">
+                    <mat-label>Report Status</mat-label>
+                    <input matInput type="text" formControlName="status" (keyup)="validaForm(produto)">
+                </mat-form-field>
+            </p>    
+            <mat-form-field class="input-cadastro-observation">
+                <mat-label>Report Observation:</mat-label>
+                <textarea matInput type="text" formControlName="observation" (keyup)="validaForm(produto)"></textarea>
+            </mat-form-field>
+
+            <button class="submit-button" mat-fab extended color="warn" (click)="submitNewProduto(produto)" [disabled]="!habilitaButtonSubmit" >
+                <mat-icon>send</mat-icon>
+                Cadastrar
+            </button>
+          
+    
+          </form>
+
+
+    </mat-card-actions>
+  </mat-card>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

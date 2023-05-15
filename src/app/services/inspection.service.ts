@@ -22,4 +22,11 @@ export class InspectionService {
     })
   }
 
+  postNewInspensao(reports: any){
+    let baseURL = "http://localhost:3000/";
+    const headers = { 'content-type': 'application/json'}  
+    const body=JSON.stringify(reports);
+
+    return this.http.post(baseURL + 'inspection', body,{'headers':headers})
+  }  
 }

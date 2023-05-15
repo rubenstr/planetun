@@ -1,0 +1,97 @@
+.cadastro-component {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4%;
+    height: 600px;
+    width: 80%;
+    min-width: 630px;
+    box-shadow: 0 30px 60px 0 rgb(167, 167, 167);
+
+    .header{
+        justify-content: left;
+        align-items: flex-start;
+        margin-bottom: 1%;
+    }
+
+    .cadastro-form{
+        border-radius: 10px;
+        background-color: #e6e4e4;
+        box-shadow:  0 30px 30px 0 gray;
+        text-align: center;
+        width: 45%;
+        min-width: 630px;
+        height: 320px;
+        margin: 5px;
+        padding-top: 20px;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .cadastro-form:hover{
+        box-shadow: 0 30px 60px 0 rgb(110, 109, 109);
+    }
+}
+
+.input-cadastro{
+    background-color: f6f6f6;
+    border: none;
+    color: #0d0d0d;
+    padding-top: 5px;
+    text-align: center;
+    font-size: 12px;
+    margin: 5px 5px 1px 5px;
+    width: 90%;
+    border: 0px solid #f6f6f6;
+    transition: all 0.5 ease-in-out;
+    border-radius: 5px;
+}
+
+.input-cadastro-report{
+    background-color: f6f6f6;
+    border: none;
+    color: #0d0d0d;
+    padding-top: 5px;
+
+    text-align: center;
+    font-size: 12px;
+    margin: 1px 5px 1px 5px;
+    width: 48%;
+    border: 0px solid #f6f6f6;
+    transition: all 0.5 ease-in-out;
+    border-radius: 5px;
+}
+
+.input-cadastro-observation{
+    background-color: f6f6f6;
+    border: none;
+    color: #0d0d0d;
+    padding-top: 1px;
+    text-align: center;
+    font-size: 12px;
+    margin: 1px 5px 5px 5px;
+    width: 98%;
+    border: 0px solid #f6f6f6;
+    transition: all 0.5 ease-in-out;
+    border-radius: 5px;
+}
+
+.submit-button {
+    display:flex;
+    justify-content: flex-end;
+    
+    margin-top: 5%;
+    margin-left:auto;
+    margin-right: 5%;
+
+}
+
+.listagem-button{
+    display:flex;
+    justify-content: flex-start;
+    
+    margin-top: 3%;
+    margin-left:auto;
+    margin-right: 3%;
+
+    background-color: #f1a19b;
+}
