@@ -1,3 +1,6 @@
+# Project:
+esse projeto tem como objetivo executar os requisitos do Grupo Planetun. 
+
 # Inspection
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.1.
